@@ -17,9 +17,7 @@ class ServiceProvider extends IlluminateProvider
     public function boot()
     {
         Validator::replacer('state', function ($message, $attribute, $rule, $parameters) {
-            return "State is invalid";
-            $y = new Parameters($parameters);
-            dd([$message, $attribute, $rule, $parameters]);
+            return "State/Province is invalid";
         });
     }
 
@@ -34,7 +32,9 @@ class ServiceProvider extends IlluminateProvider
             $factory->extend('state', function ($attribute, $value, $parameters, $validator) {
                 $y = new Parameters($parameters);
                 $x = new StateValidator($y);
-                return $x->validate($value);
+                $r = $x->validate($value);
+                var_dump([$r, $value]);
+                return $r;
             });
         });
     }
