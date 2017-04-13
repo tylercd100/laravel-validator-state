@@ -154,7 +154,7 @@ class ValidatorTest extends TestCase
 
         $this->assertEquals(true, $this->validate(null, 'state'));
         $this->assertEquals(true, $this->validate('', 'state'));
-        $this->assertEquals(false, $this->validate([], 'state'));
+        $this->assertEquals(true, $this->validate([], 'state'));
         $this->assertEquals(false, $this->validate(false, 'state'));
     }
     

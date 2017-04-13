@@ -33,7 +33,7 @@ class ServiceProvider extends IlluminateProvider
                 $y = new Parameters($parameters);
                 $x = new StateValidator($y);
                 $r = $x->validate($value);
-                var_dump([$r, $value]);
+                // var_dump([$r, $value]);
                 return $r;
             });
         });

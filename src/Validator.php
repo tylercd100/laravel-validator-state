@@ -94,7 +94,7 @@ class Validator
 
     public function validate($value)
     {
-        return $value === null || (
+        return $value === null || $value === [] || (
             is_string($value) &&
             Str::length($value) > 0 &&
             $this->validateCountry($value) &&
