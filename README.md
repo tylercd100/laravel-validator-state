@@ -6,6 +6,8 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/tylercd100/laravel-validator-state/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/tylercd100/laravel-validator-state/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/tylercd100/laravel-validator-state.svg?style=flat-square)](https://packagist.org/packages/tylercd100/laravel-validator-state)
 
+**This Package has moved to [here](https://github.com/laravel-validation-rules/us-state) for laravel 5.5+. Please use that instead. Also check out these other [community validation rules](https://laravel-validation-rules.github.io/)**
+
 ## Installation
 
 Install via [composer](https://getcomposer.org/) - In the terminal:
